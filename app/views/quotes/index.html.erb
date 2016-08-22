@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index</title>
+</head>
+<body>
+<% @quotes.each do |quote| %>
+<div class="posts">
+	<h1><%= quote.autor %></h1><br>
+	<p>"<%= quote.texto %>"</p><br>
+
+	<%= link_to "Apagar", quote, method: :delete%><br>	
+	<%= link_to "Editar", edit_quote_path(quote) %><br>
+</div>
+
+<% end %>
+</body>
+</html>

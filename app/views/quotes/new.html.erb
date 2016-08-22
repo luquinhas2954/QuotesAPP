@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<%= form_for @quote do |f| %>
+
+	<%= f.label :Autor %>
+	<%= f.text_field :autor, :placeholder => "Autor" %><br>
+
+	<%= f.label :Texto %>
+	<%= f.text_area :texto %><br>
+
+	<%= f.submit "Criar", class: "btn-submit" %>
+
+	<% end %>		
+
+</body>
+</html>

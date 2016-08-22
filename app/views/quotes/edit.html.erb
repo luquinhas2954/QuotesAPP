@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<%= form_for (@quote) do |f| %>
+
+<%= f.label :Autor %>
+<%= f.text_field :autor %>
+
+<%= f.label :Texto %>
+<%= f.text_field :texto %>
+
+<%= f.submit "Salvar", :action => "Update", :id => @quote %>
+<% end %>
+
+</body>
+</html>
